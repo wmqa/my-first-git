@@ -1,0 +1,2661 @@
+{
+	"info": {
+		"_postman_id": "8d4e7845-8840-4097-a809-f5bf1e0d7da5",
+		"name": "Partners API v1.1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1858483"
+	},
+	"item": [
+		{
+			"name": "Usage-status",
+			"item": [
+				{
+					"name": "사용 상태 조회",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015594/usage-status",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015594",
+								"usage-status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "사용 상태 정보 부분 수정",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"maxMemberCount\": null,\n  \"withdrawalDate\": \"2025-05-40\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015594/usage-status",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015594",
+								"usage-status"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subscription",
+			"item": [
+				{
+					"name": "기본 상품 계약 목록 조회",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer jp1AAABK6esvZU3u71Bf7IBSvax31xkwnVpcAB6Qm5muNSFD/Y7EbLPzn6JhZJ3oCdxLPyMtXZ+hmigmJT6Ouiob+Rnpm98nJk/JRsqeWpVWu/n+2ypSB/oE6BWAWXkLlnWx4fPSIbyMWNX8HmKROZ97S7FtZ6YRnewmFxcvMHQpPOFTEFHxnDtGSnt2XpNHdIaUk6p/rWqnYrrRKisymVzJ66Qpn0TJyFVNJIWdrHd+0KrXTExkehZktpngkmnOLTp/7at172OKcdEnxaKPtcvoCgcYNXR0CYaDOJtFi1XUsEBof0wXPElGtn3SsSYTKTcyXdMxCxneKOsMkltyZKeYRB6B2BKud4iXq++Ek95641V+cfF1u+qiCFIQSYyuvSVGmLvyhw05fr84rkqFxNY6No7pTY=.kwiu9yNovfcs8Rumz2QSOg",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015594/subscriptions",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015594",
+								"subscriptions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "기본 상품 계약 등록",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "       {\n            \"productId\": \"ROG_STD\",\n            \"plan\": \"MONTHLY_LICENSE\",\n            \"licenseCount\" : 1\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015594/subscriptions",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015594",
+								"subscriptions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "기본 상품 계약 상세 조회",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015594/subscriptions/3952368021",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015594",
+								"subscriptions",
+								"3952368021"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "기본 상품 계약 삭제",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015594/subscriptions/3952425021",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015594",
+								"subscriptions",
+								"3952425021"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "기본 상품 유료 전환",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"plan\": \"MONTHLY_LICENSE\",\n  \"productId\": \"ROG_STD\",\n  \"licenseCount\": 100\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015594/subscriptions/3951813021/paid-service",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015594",
+								"subscriptions",
+								"3951813021",
+								"paid-service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "기본 상품 업그레이드",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productId\" : \"ROG_ADV\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015594/subscriptions/3951813021/upgrade",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015594",
+								"subscriptions",
+								"3951813021",
+								"upgrade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "기본 상품 라이선스 추가",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"addLicenseCount\" : 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015594/subscriptions/3951813021/add-license-count",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015594",
+								"subscriptions",
+								"3951813021",
+								"add-license-count"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Option-product",
+			"item": [
+				{
+					"name": "옵션 상품 계약 조회",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/subscriptions/{subscriptionId}/option-products",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"subscriptions",
+								"{subscriptionId}",
+								"option-products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "옵션 상품 계약 등록",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/subscriptions/{subscriptionId}/option-products",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"subscriptions",
+								"{subscriptionId}",
+								"option-products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "옵션 상품 수량 추가",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/subscriptions/{subscriptionId}/option-products/{optionProductId}/add-quantity",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"subscriptions",
+								"{subscriptionId}",
+								"option-products",
+								"{optionProductId}",
+								"add-quantity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "옵션 상품 계약 변경",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/subscriptions/{subscriptionId}/option-products/{optionProductId}/upgrade",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"subscriptions",
+								"{subscriptionId}",
+								"option-products",
+								"{optionProductId}",
+								"upgrade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "옵션 상품 계약 삭제",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/subscriptions/{subscriptionId}/option-products/{optionProductId}",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"subscriptions",
+								"{subscriptionId}",
+								"option-products",
+								"{optionProductId}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customers",
+			"item": [
+				{
+					"name": "고객사 등록",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n    \"productId\": \"STD_T\",\r\n    \"phoneNumber\": \"080\",\r\n    \"companyName\" : \"test.shop\",\r\n    \"locale\": \"ja_JP\",\r\n    \"timeZone\": \"Asia/Tokyo\",\r\n    \"domain\": \"wm-ncp04\",\r\n    \"administrator\": {\r\n        \"lastName\": \"Park\",\r\n        \"firstName\": \"Jingu\",\r\n        \"id\": \"admin\",\r\n        \"privateEmail\": \"lotus1104@wdomain3.com\",\r\n        \"cellphone\": \"080\",\r\n        \"password\": \"d29ya3MhMjM=\",\r\n        \"countryCode\": \"+81\"\r\n    },\r\n    \"partnership\": {\r\n        \"enablePartnerProfileDisplay\": true\r\n    }\r\n   \r\n}"
+						},
+						"url": {
+							"raw": "{{redirect_url}}/v1.0/partners/customers",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"v1.0",
+								"partners",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "고객사 삭제",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n    \"productId\": \"STD_T\",\r\n    \"phoneNumber\": \"080\",\r\n    \"companyName\" : \"test.shop\",\r\n    \"locale\": \"ja_JP\",\r\n    \"timeZone\": \"Asia/Tokyo\",\r\n    \"domain\": \"wm-ncp04\",\r\n    \"administrator\": {\r\n        \"lastName\": \"Park\",\r\n        \"firstName\": \"Jingu\",\r\n        \"id\": \"admin\",\r\n        \"privateEmail\": \"lotus1104@wdomain3.com\",\r\n        \"cellphone\": \"080\",\r\n        \"password\": \"d29ya3MhMjM=\",\r\n        \"countryCode\": \"+81\"\r\n    },\r\n    \"partnership\": {\r\n        \"enablePartnerProfileDisplay\": true\r\n    }\r\n   \r\n}"
+						},
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/{domainid}",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"{domainid}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usage-status-renewal",
+			"item": [
+				{
+					"name": "사용 상태 정보 부분 갱신 등록",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"maxMemberCount\": null,\n  \"withdrawalDate\": \"2026-05-05\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/usage-status/renewal",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"usage-status",
+								"renewal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "사용 상태 정보 부분 갱신 수정",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"maxMemberCount\": null,\n  \"withdrawalDate\": \"2026-05-05\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/usage-status/renewal",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"usage-status",
+								"renewal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "사용 상태 정보 부분 갱신 삭제",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"maxMemberCount\": null,\n  \"withdrawalDate\": \"2026-05-05\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/usage-status/renewal",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"usage-status",
+								"renewal"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subscription-preOrders",
+			"item": [
+				{
+					"name": "신규 상품 신청 예약 조회",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/subscriptions/pre-orders",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"subscriptions",
+								"pre-orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "신규 상품 신청 예약 등록",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/subscriptions/pre-orders",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"subscriptions",
+								"pre-orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "신규 상품 신청 예약 수정",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/subscriptions/pre-orders",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"subscriptions",
+								"pre-orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "신규 상품 신청 예약 삭제",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/subscriptions/pre-orders",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"subscriptions",
+								"pre-orders"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Renewal",
+			"item": [
+				{
+					"name": "기본 상품 갱신 조회",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015594/subscriptions/3951740021/renewal",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015594",
+								"subscriptions",
+								"3951740021",
+								"renewal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "기본 상품 갱신 변경",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/subscriptions/3951740021/renewal",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"subscriptions",
+								"3951740021",
+								"renewal"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reservation",
+			"item": [
+				{
+					"name": "기본 상품 예약 조회",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/subscriptions/{subscriptionId}/reservation",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"subscriptions",
+								"{subscriptionId}",
+								"reservation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "기본 상품 예약 등록",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/subscriptions/{subscriptionId}/reservation",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"subscriptions",
+								"{subscriptionId}",
+								"reservation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "기본 상품 예약 수정",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/subscriptions/{subscriptionId}/reservation",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"subscriptions",
+								"{subscriptionId}",
+								"reservation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "기본 상품 예약 삭제",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/subscriptions/{subscriptionId}/reservation",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"subscriptions",
+								"{subscriptionId}",
+								"reservation"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usages",
+			"item": [
+				{
+					"name": "사용 조회",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/usages?year=2025",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"usages"
+							],
+							"query": [
+								{
+									"key": "year",
+									"value": "2025"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Option-product-orders",
+			"item": [
+				{
+					"name": "옵션 상품 예약 리스트 조회",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/option-product-orders",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"option-product-orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "옵션 상품 예약 등록",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/option-product-orders",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"option-product-orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "옵션 상품 예약 조회",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/option-product-orders/{optionProductId}",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"option-product-orders",
+								"{optionProductId}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "옵션 상품 예약 변경",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/option-product-orders/{optionProductId}",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"option-product-orders",
+								"{optionProductId}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "옵션 상품 예약 삭제",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/400015593/option-product-orders/{optionProductId}",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"400015593",
+								"option-product-orders",
+								"{optionProductId}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Option-product-renewal",
+			"item": [
+				{
+					"name": "옵션 상품 갱신 조회",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/{domainId}/option-products/{optionProductId}/option-product-renewal",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"{domainId}",
+								"option-products",
+								"{optionProductId}",
+								"option-product-renewal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "옵션 상품 갱신 설정",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/{domainId}/option-products/{optionProductId}/option-product-renewal",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"{domainId}",
+								"option-products",
+								"{optionProductId}",
+								"option-product-renewal"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Option-product-usages",
+			"item": [
+				{
+					"name": "옵션 상품 사용 내역 조회",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/customers/{domainId}/option-product-usages/{optionProductId}",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"customers",
+								"{domainId}",
+								"option-product-usages",
+								"{optionProductId}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Invoices",
+			"item": [
+				{
+					"name": "인보이스 리스트 조회",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/invoices",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"invoices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "인보이스 상세 조회",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{allAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthOauth}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{all.readAuthJWT}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{sa_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{redirect_url}}/partners/invoice-details",
+							"host": [
+								"{{redirect_url}}"
+							],
+							"path": [
+								"partners",
+								"invoice-details"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
